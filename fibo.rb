@@ -71,8 +71,10 @@ class BinNumber
 	
 end
 
-b1 = BinNumber.new
-b2 = BinNumber.new
+require_relative("../BigInt.rb")
+
+b1 = BigInt.new(1)
+b2 = BigInt.new(1)
 
 N = ARGV[0].to_i
 i = 1
@@ -83,10 +85,10 @@ while (i < N)
 	if (i%1000==1) then puts i-1 end
 end
 
-if (b1.rep.length < b2.rep.length) then
-	b2.writeBin(i)
+if (b1.rep < b2.rep) then
+	b2.print("/mnt/sdb3/Ruby/Fibo/fibo.txt")
 else
-	b1.writeBin(i)
+	b1.print("/mnt/sdb3/Ruby/Fibo/fibo.txt")
 end
 
 #puts "#{b1.rep}"
