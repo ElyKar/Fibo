@@ -71,7 +71,7 @@ class BinNumber
 	
 end
 
-require_relative("../BigInt.rb")
+require_relative("BigInt.rb")
 
 b1 = BigInt.new(1)
 b2 = BigInt.new(1)
